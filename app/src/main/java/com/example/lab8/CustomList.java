@@ -78,7 +78,14 @@ public class CustomList extends ArrayAdapter<City> {
             return false;
         }
     }
-    public void deleteCity (City city) {}
+
+    /**
+     * this deletes a city object from cities list
+     * @param city
+     */
+    public void deleteCity (City city) {
+        //cities.remove(city);
+    }
 
     //public int countCities () {}
 }
