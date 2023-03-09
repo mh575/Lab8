@@ -53,11 +53,7 @@ public class CustomList extends ArrayAdapter<City> {
     public int getCount() {
         return cities.size();
     }
-    /**
-     * this adds a city object to the list
-     *for the first phase it will be empty
-     * @param city
-     */
+
 
     /**
      * this adds a city object to the list
@@ -68,12 +64,23 @@ public class CustomList extends ArrayAdapter<City> {
     public void addCity(City city) {
         cities.add(city);
     }
-    public void hasCity(City city) {
 
+    /**
+     * this checks the CustomList for a specific city.
+     * @param city
+     *
+     */
+    public boolean hasCity(City city) {
+        if (cities.contains(city)) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
     public void deleteCity (City city) {
 
     }
 
-    public void countCities () {}
+    public int countCities () {}
 }
