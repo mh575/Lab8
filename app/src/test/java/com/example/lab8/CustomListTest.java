@@ -38,6 +38,7 @@ public class CustomListTest {
      * add a city and check for it
      * do not add a city and check for it
      */
+    @Test
     public void hasCityTest(){
         list = MockCityList();
         City passCity = new City("Estevan", "SK");
