@@ -78,7 +78,7 @@ public class CustomList extends ArrayAdapter<City> {
             return false;
         }
     }
-    //public void deleteCity (City city) {}
+    public void deleteCity (City city) {}
 
     //public int countCities () {}
 }
